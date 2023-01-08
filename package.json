@@ -7,6 +7,8 @@
     "start": "nx serve --project=project-app",
     "postinstall": "node ./decorate-angular-cli.js && husky install",
     "build:affected": "nx affected:build --parallel --maxParallel=5",
+    "e2e": "nx e2e --all",
+    "e2e:cli": "nx e2e --headless --all",
     "e2e:affected:cli": "nx affected:e2e --parallel --maxParallel=5 --headless --all",
     "pre-commit": "lint-staged",
     "prettier": "prettier --write --config ./.prettierrc --ignore-path ./.prettierignore ."
