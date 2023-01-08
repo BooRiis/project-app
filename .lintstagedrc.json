@@ -1,0 +1,4 @@
+{
+  "*.{md,json,html}": ["npm run prettier"],
+  "*,{js,jsx,ts,tsx}": ["npm run lint:affected", "npm run prettier"]
+}
