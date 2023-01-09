@@ -6,6 +6,7 @@
     "ng": "nx",
     "start": "nx serve --project=project-app",
     "postinstall": "node ./decorate-angular-cli.js && husky install",
+    "build": "nx build",
     "build:affected": "nx affected:build --parallel --maxParallel=5",
     "e2e": "nx e2e --all",
     "e2e:cli": "nx e2e --headless --all",
