@@ -11,7 +11,12 @@
     "e2e": "nx e2e --all",
     "e2e:cli": "nx e2e --headless --all",
     "e2e:affected:cli": "nx affected:e2e --parallel --maxParallel=5 --headless --all",
+    "test": "nx test -all",
+    "test:affected": "nx affected:test --parallel --maxParalle=5 -all",
     "pre-commit": "lint-staged",
+    "lint": "nx run-many --all --target=lint",
+    "lint:fix": "nx affected:lint --fix",
+    "lint:affected": "nx affected:lint --parallel --maxParallel=5 --all",
     "prettier": "prettier --write --config ./.prettierrc --ignore-path ./.prettierignore ."
   },
   "private": true,
